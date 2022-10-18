@@ -26,7 +26,9 @@ describe("Issue List", () => {
     cy.wait("@getIssues");
 
     // set button aliases
-    cy.get("button", { timeout: 10000 }).contains("Previous").as("prev-button");
+    cy.get("button", { timeout: 10000 })
+      .contains("Previous1")
+      .as("prev-button");
     cy.get("button").contains("Next").as("next-button");
   });
 
